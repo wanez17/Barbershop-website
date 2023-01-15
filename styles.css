@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+html{
+	box-sixing: border-box;
+	scroll-behavior: smooth;
+}
+
+/*---------VARIABLE DECLARATION---------*/
+:root{
+	--WHITE:#ffffff;
+	--PEACH:#FFE5B4;
+	--BROWN:brown;
+	--BLACK:#333;
+	--GRAY:#f6f6f6;
+	--SHADOW:#c3c2c26b;
+	--MAIN-PADDING:2rem 6rem;
+}
+
+*{
+	margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+
+#main{
+	padding: var(--MAIN-PADDING);
+	background-color: var(--BROWN);
+	background: rgba(0, 0, 0, 0.8) url(images/barber1.jpg);
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+
+#main header{
+	height: 100vh;
+}
+
+#nav{
+	padding: 0rem 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background-color: var(--WHITE);
+	box-shadow: 2px 2px 10px var(--SHADOW);
+}
+
+#nav  a{
+	display: inline;
+	text-decoration: none;
+	color: var(--BLACK);
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 0.8rem;
+	padding: 0.5rem;
+}
+
+#nav  a:first-child{
+	font-size: 1.2rem;
+	text-align: left;
+	margin-right: 2rem;
+}
+
+#nav a img{
+	width: 5.5rem;
+	height: auto;
+}
+
+#nav a:hover, :focus{
+	border: 1px solid var(--BLACK);
+}
+
+#nav a:first-child:hover{
+	border: none;
+}
+
+.header__bottom{
+	margin-top: 7rem;
+}
+
+.header__bottom h1{
+	font-size: 3rem;
+	color: var(--PEACH);
+	margin: 0;
+	margin: 1.4rem auto;
+	letter-spacing: 2px;
+}
+
+#first__child{
+	font-weight: bold;
+}
+
+#last__child{
+	color: var(--WHITE);
+	font-weight: normal;
+	font-family: 'Cookie', cursive;
+}
+
+.header__bottom p{
+	color: var(--WHITE);
+	font-size: 1.1rem;
+	margin: 1.4rem auto;
+	font-weight: lighter;
+	padding-bottom: 2rem;
+}
+
+#header-btn{
+	color: var(--BLACK);
+	background-color: var(--PEACH);
+	padding: 0.7rem;
+	margin-top: 3.3rem;
+	text-decoration: none;
+}
+
+#header-btn:hover{
+	box-shadow: 1px 1px 3px black;
+	color: var(--PEACH);
+	background-color: var(--BLACK);
+}
+
+#info{
+	padding: var(--MAIN-PADDING);
+	display: grid;
+	row-gap: 0;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+#info .info-grid{
+	/*max-width: 15rem;*/
+}
+
+#info .info-grid img{
+	max-width: 60%;
+	height: auto;
+}
+
+.info-grid header{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.info-grid p:last-of-type{
+	margin-bottom: 2rem;
+}
+
+.info-grid a{
+	text-decoration: none;
+	color: var(--BLACK);
+	border: 1px solid var(--BLACK);
+	padding: 0.5rem 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.info-grid a:hover{
+	color: var(--WHITE);
+	background-color: var(--BLACK);
+	border: 1px solid var(--WHITE);
+	font-weight: normal;
+}
+
+#services{
+	padding: var(--MAIN-PADDING);
+	background-color: var(--GRAY);
+}
+
+#services header{
+	font-size: 1.8rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.servicetab{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 2rem;
+	justify-content: center;
+
+}
+
+.servicetab .service{
+	max-width: 300px;
+}
+
+.service a{
+	text-decoration: none;
+	color: var(--BLACK);
+}
+
+.service a p:first-of-type{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.service img{
+	width: 30%;
+}
+
+#services .service-btn{
+	background-color: var(--WHITE);
+	padding: 2rem 1rem;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px var(--SHADOW);
+}
+
+.service a:hover{
+	opacity: 0.6;
+}
+
+#team{
+	background-color: var(--PEACH);
+	padding: var(--MAIN-PADDING);
+}
+
+#team header{
+	font-size: 1.8rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: var(--GRAY);
+	text-align: center;
+	background-color: var(--BLACK);
+	padding:0.5rem auto;
+}
+
+#team .team-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#team .team-container .member{
+	background-color: var(--WHITE);
+	max-width: 300px;
+	margin: 10px;
+	padding: 0.5rem;
+}
+
+#team p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#team .team-container .member p:first-of-type{
+	font-size: 	1.2rem;
+	padding-top: 5px;
+	padding-bottom: 0;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+#team .team-container .member p:last-of-type{
+	padding-top: 0;
+	padding-bottom: 5px;
+	font-size: 	1rem;
+	font-weight: light;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 	10px;
+}
+
+#team .team-container .member img{
+	width: 	250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#team .team-container .member a{
+	background-color: var(--BROWN);
+	color: var(--WHITE);
+	text-decoration: none;
+	padding: 5px;
+}
+
+#team .team-container .member a:hover{
+	opacity: 0.8;
+}
+
+
+/*Styling the contact form*/
+#contact {
+	margin-bottom: 0;
+	position: relative;
+	z-index: -1;
+}
+
+#contact h1 {
+    font-size: 1.8rem;
+	font-weight: bold;
+	padding-top: 2rem;
+	text-transform: uppercase;
+	color: var(--BLACK);
+	text-align: center;
+}
+
+#contact h4 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+
+/*inputs, buttons, labels etc. styling in the contact div*/
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: var(--BROWN);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*End of contact form styling*/
+
+
+
+/*Styling the side social buttons*/
+#side-icons{
+	position: fixed;
+	left: 0;
+	top: 15rem;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+}
+#side-icons a{
+	text-decoration: none;
+	padding: 5px 5px;
+	margin-left: 0.5rem;
+	max-width: 2.2rem;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: var(--WHITE);
+	margin-bottom: 0.6rem;
+}
+
+#side-icons a:hover{
+	opacity: 0.8;
+}
+
+#side-icons a:first-child{
+	background-color: blue;
+	animation: popup1 2s ease-in-out;
+}
+
+#side-icons a:nth-child(2){
+	background-color: dodgerblue;
+	animation: popup1 3s ease-in-out;
+}
+
+#side-icons a:last-child{
+	background-color: red;
+	animation: popup1 4s ease-in-out;
+}
+
+/*animating the side social icons*/
+
+@keyframes popup1{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+		margin-left: 0;
+	}
+
+	100%{
+	}
+}
+
+@keyframes popup2{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+		margin-left: 0;
+	}
+
+	100%{
+	}
+}
+
+@keyframes popup3{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+		margin-left: 0;
+	}
+
+	100%{
+	}
+}
+
+/*End of the button animation*/
+
+
+#location{
+	background-color: var(--BLACK);
+	color: var(--WHITE);
+	padding: 16px 20px;
+}
+
+#location p{
+	padding: 0.5rem 0.8rem;
+	text-align: center;
+}
+
+#location .highlight{
+	color: var(--PEACH);
+	font-weight: bolder;
+}
+
+
+
+/*styling the footer element*/
+footer{
+	text-align: center;
+	padding: 1rem 1rem;
+}
+
+
+/*Adding media queries to ensure the responsiveness of the website*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.header__bottom{
+	margin-top: 1rem;
+}
+
+	#nav{
+	padding: 0.1rem 0.2rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	box-shadow: 2px 2px 10px var(--SHADOW);
+}
+
+#nav  a{
+	display: flex;
+	text-decoration: none;
+	color: var(--BLACK);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 1rem 0.5rem;
+}
+
+#side-icons{
+	display: none;
+}
+
+#nav  a:first-child{
+	display: none;
+	font-size: 1.2rem;
+	text-align: left;
+	margin-right: 2rem;
+}
+
+#nav  a:nth-child(5), #nav  a:nth-child(6){
+	display: none;
+}
+
+#main{
+		padding: 20px 30px;
+		padding-top: 5rem;
+		text-align: center;
+	}
+
+.header__bottom h1{
+	font-size: 2.4rem;
+	color: var(--PEACH);
+	margin: 1.4rem auto;
+	letter-spacing: 2px;
+}
+
+#last__child{
+font-size: 2rem;
+}
+
+.header__bottom p{
+	font-size: 1rem;
+}
+
+#info{
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+#info .info-grid img{
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+	display: none;
+}
+
+.info-grid header{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.info-grid p{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.info-grid a{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+#services header{
+	font-size: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+.servicetab{
+	display: grid;
+	grid-template-columns: auto;
+	gap: 1rem;
+	justify-content: center;
+
+}
+
+.servicetab .service{
+	max-width: 500px;
+	min-width: 200px;
+}
+
+#services .service-btn{
+	padding: 1.5rem 0.8rem;
+}
+
+#info{
+	padding: 30px;
+} 
+ 
+.info-grid header{
+	margin-top: 10px;
+	font-size: 1.3rem;
+}
+
+#team{
+	padding: 30px;
+} 
+
+#team p{
+	padding: 20px;
+} 
+
+#team .team-container{
+	justify-content: center;
+}
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+	#nav a{
+		font-size: 0.8rem;
+		padding: 0.7rem 0.3rem;
+		border: 1px solid var(--GRAY);
+		margin: 0.3rem;
+	}
+
+	#main header{
+		margin-top: 40px;
+	}
+
+	#main{
+		padding: 25px 20px;
+		text-align: center;
+	}
+
+.header__bottom h1{
+	font-size: 2rem;
+	color: var(--PEACH);
+	margin: 0.5rem auto;
+	letter-spacing: 2px;
+}
+
+#last__child{
+font-size: 1.5rem;
+}
+
+.header__bottom p{
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+#info{
+	padding: 15px 25px 15px 15px;
+} 
+ 
+.info-grid header{
+	margin-top: 10px;
+	font-size: 1.3rem;
+}
+
+#team{
+	padding: 15px 25px 15px 15px;
+} 
+
+#team p{
+	padding:15px 9px;
+} 
+
+}
+
+@media only screen and (min-width:768px ){
+
+#location p{
+	font-size: 1.2rem;
+}
+
+}
+
+
+/*end of media query*/
+
+
+
+
